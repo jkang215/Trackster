@@ -5,6 +5,12 @@ $(document).ready(function() {
   $('#search').click(function() {
     Trackster.searchTracksByTitle($('.search-bar').val());
   });
+  //Listener for the enter key, searches if search bar is not an empty string
+  $(document).keypress(function(e) {
+    if(e.which == 13 && $('.search-bar').val() != "") {
+      Trackster.searchTracksByTitle($('.search-bar').val());
+    }
+  });
 });
 
 /*
