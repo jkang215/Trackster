@@ -14,7 +14,47 @@
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="./resources/js/trackster.js"></script>
     <script type="text/javascript" src="./resources/js/tests.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
   </head>
   <body>
+    <!-- bootstrap header -->
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col-xs-1">
+        </div>
+        <div class="col-xs-3">
+          <h1>trackster</h1>
+        </div>
+        <div class="col-xs-4">
+        </div>
+        <div class="col-xs-2 center">
+          <input class="search-bar" placeholder="Search"></input>
+        </div>
+        <div class="col-xs-1 center">
+          <div id="search" class="btn btn-primary"><i class="fa fa-search fa-2x"></i></div>
+        </div>
+      </div>
+      <div class="row col-headers">
+        <div class="col-xs-6 song-header">Song</div>
+        <div class="col-xs-2 col-header">Artist</div>
+        <div class="col-xs-2 col-header">Artwork</div>
+        <div class="col-xs-2 col-header">Listeners</div>
+      </div>
+      <div class="row">
+        <div id="song-list" class="container-fluid">
+          <!-- Original mock song HTML code
+          <div id="song" class="row">
+            <div class="col-xs-2 play-btn"><a href="https://youtu.be/eI_O5_tJ1hA"><i class="fa fa-play-circle-o fa-2x"></i></a></div>
+            <div class="col-xs-4 song-name">Song</div>
+            <div class="col-xs-2 artist">Artist</div>
+            <div class="col-xs-2 artwork">Artwork</div>
+            <div class="col-xs-2 listeners">Listeners</div>
+          </div>
+          -->
+        </div>
+      </div>
+    </div>
+
+
   </body>
 </html>
